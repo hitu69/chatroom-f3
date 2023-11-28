@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- form -->
+    <form class="form-username">
+      <h1>Join Chatroom</h1>
+      <p>Username</p>
+      <input type="text" id="username-input" />
+      <button id="join-btn">Join Chat</button>
+    </form>
+
+    <!-- Chatroom -->
+    <div class="chatroom-container">
+      <div class="chatroom-header">Chatroom</div>
+      <div class="messages" id="messages-container"></div>
+      <div>
+        <input type="text" placeholder="Enter Message" id="message-input" />
+        <button id="send-btn">Send</button>
+        <button id="exit-btn">Exit</button>
+      </div>
+    </div>
+    <script
+      src="https://cdn.socket.io/4.7.2/socket.io.min.js"
+      integrity="sha384-mZLF4UVrpi/QTWPA7BjNPEnkIfRFn4ZEO3Qt/HFklTJBj/gBOV8G3HcKn4NfQblz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
